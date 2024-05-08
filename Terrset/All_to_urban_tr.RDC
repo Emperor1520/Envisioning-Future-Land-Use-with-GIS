@@ -1,0 +1,29 @@
+file format : IDRISI Raster A.1
+file title  : Transition from All to Urban between 2001-thematic_new and 2008-thematic_new
+data type   : byte
+file type   : binary
+columns     : 1717
+rows        : 951
+ref. system : utm-43n
+ref. units  : m
+unit dist.  : 1.0000000
+min. X      : 294676.5064347
+max. X      : 346186.5064347
+min. Y      : 2454061.0564304
+max. Y      : 2482591.0564304
+pos'n error : unknown
+resolution  : unknown
+min. value  : 0
+max. value  : 3
+display min : 0
+display max : 3
+value units : crossclassification categories
+value error : unknown
+flag value  : none
+flag def'n  : none
+legend cats : 3
+code      1 : Water to Urban
+code      2 : Forest to Urban
+code      3 : Agriculture to Urban
+lineage     : This file was created by the ASSIGN module with the command line: 
+lineage     : F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\All_to_urban_tr.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl

@@ -1,0 +1,50 @@
+file format : IDRISI Raster A.1
+file title  : Cross-Classification : 2008-thematic_new | landcov_predict_2017_1 | 2017-thematic
+data type   : integer
+file type   : binary
+columns     : 1717
+rows        : 951
+ref. system : utm-43n
+ref. units  : m
+unit dist.  : 1.0000000
+min. X      : 294676.5064347
+max. X      : 346186.5064347
+min. Y      : 2454061.0564304
+max. Y      : 2482591.0564304
+pos'n error : unknown
+resolution  : 30.0000000
+min. value  : 1
+max. value  : 24
+display min : 0
+display max : 24
+value units : crossclassification categories
+value error : unknown
+flag value  : none
+flag def'n  : none
+legend cats : 24
+code      1 :  1 |  1 |  1
+code      2 :  2 |  2 |  1
+code      3 :  3 |  3 |  1
+code      4 :  2 |  4 |  1
+code      5 :  3 |  4 |  1
+code      6 :  4 |  4 |  1
+code      7 :  1 |  1 |  2
+code      8 :  2 |  2 |  2
+code      9 :  3 |  3 |  2
+code     10 :  2 |  4 |  2
+code     11 :  3 |  4 |  2
+code     12 :  4 |  4 |  2
+code     13 :  1 |  1 |  3
+code     14 :  2 |  2 |  3
+code     15 :  3 |  3 |  3
+code     16 :  2 |  4 |  3
+code     17 :  3 |  4 |  3
+code     18 :  4 |  4 |  3
+code     19 :  1 |  1 |  4
+code     20 :  2 |  2 |  4
+code     21 :  3 |  3 |  4
+code     22 :  2 |  4 |  4
+code     23 :  3 |  4 |  4
+code     24 :  4 |  4 |  4
+lineage     : This file was created by CROSSTAB with the command line: 
+lineage     : 1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\landcov_predict_2017_1.rst*F:\Future Landuse\Terrset\2017-thematic.rst*NONE*1*F:\Future Landuse\Terrset\idrtmp_validation.rst

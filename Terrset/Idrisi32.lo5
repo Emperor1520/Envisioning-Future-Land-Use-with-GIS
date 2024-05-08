@@ -1,0 +1,819 @@
+GEOTIFF  1*F:\Future Landuse\DataConversion\2001-thematic.tif*F:\Future Landuse\Terrset\2001-thematic.rst
+GEOTIFF  1*F:\Future Landuse\DataConversion\2008-thematic.tif*F:\Future Landuse\Terrset\2008-thematic.rst
+GEOTIFF  1*F:\Future Landuse\DataConversion\2017_urb_dst.tif*F:\Future Landuse\Terrset\2017_urb_dst.rst
+GEOTIFF  1*F:\Future Landuse\DataConversion\2017-thematic.tif*F:\Future Landuse\Terrset\2017-thematic.rst
+GEOTIFF  1*F:\Future Landuse\DataConversion\DEM_FINAL_2.tif*F:\Future Landuse\Terrset\DEM_FINAL_2.rst
+GEOTIFF  1*F:\Future Landuse\DataConversion\Road_dst.tif*F:\Future Landuse\Terrset\Road_dst.rst
+GEOTIFF  1*F:\Future Landuse\DataConversion\road2.tif*F:\Future Landuse\Terrset\road2.rst
+GEOTIFF  1*F:\Future Landuse\DataConversion\slope.tif*F:\Future Landuse\Terrset\slope.rst
+DISPLAY image file F:\Future Landuse\Terrset\2017_urb_dst.rst with symbol file C:\Program Files (x86)\TerrSet\Symbols\quant.smp.  Autoscale, Title, Legend.
+DISPLAY image file F:\Future Landuse\Terrset\2008-thematic.rst with symbol file F:\Future Landuse\Terrset\2008-thematic.smp.  Title, Legend.
+AREA  F:\Future Landuse\Terrset\2001-thematic.rst*2*1*F:\Future Landuse\Terrset\codes_check.avl
+AREA  F:\Future Landuse\Terrset\2008-thematic.rst*2*1*F:\Future Landuse\Terrset\codes_check.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2001-thematic.rst*F:\Future Landuse\Terrset\2008-thematic.rst*NONE*NONE*10*F:\Future Landuse\Terrset\Future_crosstab.rst*N
+ASSIGN  F:\Future Landuse\Terrset\idrtmp_lulc_2001-thematic.rst*F:\Future Landuse\Terrset\tmpresult.rst*F:\Future Landuse\Terrset\modifycode1.avl
+ASSIGN  F:\Future Landuse\Terrset\idrtmp_lulc_2008-thematic.rst*F:\Future Landuse\Terrset\tmpresult.rst*F:\Future Landuse\Terrset\modifycode2.avl
+AREA  F:\Future Landuse\Terrset\idrtmp_lulc_2001-thematic.rst*2*1*F:\Future Landuse\Terrset\codes.avl
+AREA  F:\Future Landuse\Terrset\idrtmp_lulc_2008-thematic.rst*2*1*F:\Future Landuse\Terrset\codes.avl
+AREA  F:\Future Landuse\Terrset\2001-thematic_new.rst*2*1*F:\Future Landuse\Terrset\codes_check.avl
+AREA  F:\Future Landuse\Terrset\2008-thematic_new.rst*2*1*F:\Future Landuse\Terrset\codes_check.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*NONE*NONE*10*F:\Future Landuse\Terrset\Future_crosstab.rst*N
+CROSSTAB  1*F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*NONE*NONE*10*F:\Future Landuse\Terrset\Future_crosstab.rst*N
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\All_to_urban_tr.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+DISPLAY image file F:\Future Landuse\Terrset\All_to_urban_tr.rst with symbol file qual.  Title, Legend.
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+TREND  F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\All_to_urban_trend_3rd.rst*Y*3
+DISPLAY image file F:\Future Landuse\Terrset\All_to_urban_trend_3rd.rst with symbol file trend.  Autoscale, Title, Legend.
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+TREND  F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\All_to_urban_trend_2nd.rst*Y*2
+DISPLAY image file F:\Future Landuse\Terrset\All_to_urban_trend_2nd.rst with symbol file trend.  Autoscale, Title, Legend.
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+TREND  F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\All_to_urban_trend_4th.rst*Y*4
+DISPLAY image file F:\Future Landuse\Terrset\All_to_urban_trend_4th.rst with symbol file trend.  Autoscale, Title, Legend.
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+TREND  F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\Agri_to_urba_3rd.rst*Y*3
+DISPLAY image file F:\Future Landuse\Terrset\Agri_to_urba_3rd.rst with symbol file trend.  Autoscale, Title, Legend.
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+TREND  F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\Agri_to_urba_4th.rst*Y*4
+DISPLAY image file F:\Future Landuse\Terrset\Agri_to_urba_4th.rst with symbol file trend.  Autoscale, Title, Legend.
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+TREND  F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\Forest_to_urba_4th.rst*Y*4
+DISPLAY image file F:\Future Landuse\Terrset\Forest_to_urba_4th.rst with symbol file trend.  Autoscale, Title, Legend.
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+TREND  F:\Future Landuse\Terrset\idrtmp_lulc_trend.rst*F:\Future Landuse\Terrset\Forest_to_urba_3rd.rst*Y*3
+DISPLAY image file F:\Future Landuse\Terrset\Forest_to_urba_3rd.rst with symbol file trend.  Autoscale, Title, Legend.
+STRETCH  F:\Future Landuse\Terrset\Road_dst.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Road_dst_evaluate_stretch.rst*1*min*max*N*63
+ASSIGN  F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Road_dst_evaluate_stretch.rst*NONE*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*12*F:\Future Landuse\Terrset\idrtmp_lulc_cramerV.rst*N
+STRETCH  F:\Future Landuse\Terrset\slope.rst*F:\Future Landuse\Terrset\idrtmp_lulc_slope_evaluate_stretch.rst*1*min*max*N*63
+ASSIGN  F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_slope_evaluate_stretch.rst*NONE*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*12*F:\Future Landuse\Terrset\idrtmp_lulc_cramerV.rst*N
+STRETCH  F:\Future Landuse\Terrset\2017_urb_dst.rst*F:\Future Landuse\Terrset\idrtmp_lulc_2017_urb_dst_evaluate_stretch.rst*1*min*max*N*63
+ASSIGN  F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_2017_urb_dst_evaluate_stretch.rst*NONE*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*12*F:\Future Landuse\Terrset\idrtmp_lulc_cramerV.rst*N
+STRETCH  F:\Future Landuse\Terrset\DEM_FINAL_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_DEM_FINAL_2_evaluate_stretch.rst*1*min*max*N*63
+ASSIGN  F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_DEM_FINAL_2_evaluate_stretch.rst*NONE*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*12*F:\Future Landuse\Terrset\idrtmp_lulc_cramerV.rst*N
+STRETCH  F:\Future Landuse\Terrset\Agri_to_urba_3rd.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Agri_to_urba_3rd_evaluate_stretch.rst*1*min*max*N*63
+ASSIGN  F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Agri_to_urba_3rd_evaluate_stretch.rst*NONE*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*12*F:\Future Landuse\Terrset\idrtmp_lulc_cramerV.rst*N
+STRETCH  F:\Future Landuse\Terrset\All_to_urban_trend_3rd.rst*F:\Future Landuse\Terrset\idrtmp_lulc_All_to_urban_trend_3rd_evaluate_stretch.rst*1*min*max*N*63
+ASSIGN  F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_All_to_urban_trend_3rd_evaluate_stretch.rst*NONE*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*12*F:\Future Landuse\Terrset\idrtmp_lulc_cramerV.rst*N
+STRETCH  F:\Future Landuse\Terrset\Forest_to_urba_3rd.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Forest_to_urba_3rd_evaluate_stretch.rst*1*min*max*N*63
+ASSIGN  F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.avl
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Forest_to_urba_3rd_evaluate_stretch.rst*NONE*F:\Future Landuse\Terrset\idrtmp_lulc_later_land_cover_mask.rst*12*F:\Future Landuse\Terrset\idrtmp_lulc_cramerV.rst*N
+RANDOM  F:\Future Landuse\Terrset\idrtmp_lulc_random.rst*1*2*F:\Future Landuse\Terrset\2008-thematic_new.rst*1
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_transition_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_persistence_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+OVERLAY  1*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_transition_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_persistence_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\Future_Train_URBAN.rst
+MLP  1*1*F:\Future Landuse\Terrset\idrtmp_lulc_explan_vars.rgf*NONE*F:\Future Landuse\Terrset\Future_Train_URBAN.rst*1*2563*2563*Y*1*7*Y*0.001*0.01*0.5*1.0*0.01*10000*100*2*F:\Future Landuse\Terrset\Future*N*1*3*F:\Future Landuse\Terrset\2008-thematic_new.rst
+RECLASS  I*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rcl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_act1.rst*f:\future landuse\terrset\future_transition_potential_from_2_to_4.rst
+RECLASS  I*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rcl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_act2.rst*f:\future landuse\terrset\future_transition_potential_from_3_to_4.rst
+DISPLAY image file f:\future landuse\terrset\future_transition_potential_from_2_to_4.rst with symbol file Quant.  Autoscale, Title, Legend.
+DISPLAY image file f:\future landuse\terrset\future_transition_potential_from_3_to_4.rst with symbol file Quant.  Autoscale, Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2017_1_soft_modeled.rst
+MARKOV  F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\Future_2017_*1*0.0*7*9*lulc
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2017_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential.rgf*F:\Future Landuse\Terrset\landcov_predict_2017_1.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2017_1.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2017_1_soft.rst
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2017_1_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+DISPLAY image file F:\Future Landuse\Terrset\2017-thematic.rst with symbol file F:\Future Landuse\Terrset\2017-thematic.smp.  Title, Legend.
+CROSSTAB  1*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\landcov_predict_2017_1.rst*F:\Future Landuse\Terrset\2017-thematic.rst*NONE*1*F:\Future Landuse\Terrset\idrtmp_validation.rst
+ASSIGN  F:\Future Landuse\Terrset\idrtmp_validation.rst*F:\Future Landuse\Terrset\validation.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+DISPLAY image file F:\Future Landuse\Terrset\validation.rst with symbol file F:\Future Landuse\Terrset\validation.smp.  Title, Legend.
+GEOTIFF  2*F:\Future Landuse\Terrset\landcov_predict_2017_1.rst*F:\Future Landuse\Validation\Predct_2017.tif*F:\Future Landuse\Terrset\2017-thematic.smp
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2030_1_soft_modeled.rst
+MARKOV  F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\Future_2030_*1*0.0*7*22*lulc
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2030_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential.rgf*F:\Future Landuse\Terrset\landcov_predict_2030_1.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2030_1.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2030_1_soft.rst
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2030_1_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2050_1_soft_modeled.rst
+MARKOV  F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\Future_2050_*1*0.0*7*42*lulc
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2050_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential.rgf*F:\Future Landuse\Terrset\landcov_predict_2050_1.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2050_1.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2050_1_soft.rst
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2050_1_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_1_soft_modeled.rst
+MARKOV  F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\Future_2100_*1*0.0*7*92*lulc
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_1.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_1.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_1_soft.rst
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_1_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_1_hard.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_1_hard.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+GEOTIFF  2*F:\Future Landuse\Terrset\landcov_predict_2030_1.rst*F:\Future Landuse\Future\Fut_2030.tif*F:\Future Landuse\Terrset\2017-thematic.smp
+GEOTIFF  2*F:\Future Landuse\Terrset\landcov_predict_2050_1.rst*F:\Future Landuse\Future\Fut_2050.tif*F:\Future Landuse\Terrset\2017-thematic.smp
+GEOTIFF  2*F:\Future Landuse\Terrset\landcov_predict_2100_1.rst*F:\Future Landuse\Future\Fut_2100.tif*F:\Future Landuse\Terrset\2017-thematic.smp
+GEOTIFF  2*F:\Future Landuse\Terrset\landcov_predict_2100_1_hard.rst*F:\Future Landuse\Future\Fut_2100_hard.tif*F:\Future Landuse\Terrset\2017-thematic.smp
+MARKOV  F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\Future_2100_*1*0.0*7*92*lulc
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix_soft_modeled.rst
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix_soft.rst
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_soft_modeled.rst
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_soft.rst
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+GEOTIFF  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30.tif*F:\Future Landuse\Terrset\2017-thematic.smp
+GEOTIFF  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30.rst*F:\Future Landuse\Future\Fut_2100_Matrix.tif*F:\Future Landuse\Terrset\2017-thematic.smp
+CHGALLOC  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_1.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_1.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_1.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_2.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_2.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_2.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_3.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_3.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_3.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_4.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_4.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_4.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_5.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_5.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_5.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_6.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_6.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_6.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_7.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_7.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_7.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_8.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_8.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_8.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_9.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_9.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_9.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_10.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_10.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_10.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_11.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_11.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_11.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_12.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_12.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_12.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_13.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_13.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_13.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_14.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_14.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_14.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_15.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_15.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_15.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_16.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_16.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_16.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_17.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_17.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_17.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_18.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_18.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+CHGALLOC  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_18.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_19.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_19.rst*1*1
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1_stage_19.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_20.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_1.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_1.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_1.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_1.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_1.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_2.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_2.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_2.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_2.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_3.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_3.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_3.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_3.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_4.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_4.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_4.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_4.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_5.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_5.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_5.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_5.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_6.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_6.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_6.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_6.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_7.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_7.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_7.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_7.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_8.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_8.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_8.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_8.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_9.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_9.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_9.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_9.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_10.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_10.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_10.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_10.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_11.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_11.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_11.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_11.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_12.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_12.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_12.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_12.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_13.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_13.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_13.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_13.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_14.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_14.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_14.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_14.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_15.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_15.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_15.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_15.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_16.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_16.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_16.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_16.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_17.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_17.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_17.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_17.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_18.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_18.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_18.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_18.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_19.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_19.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_19.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2_stage_19.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_20.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_2.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+RANDOM  F:\Future Landuse\Terrset\idrtmp_lulc_random.rst*1*2*F:\Future Landuse\Terrset\2008-thematic_new.rst*1
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_transition_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+ASSIGN  F:\Future Landuse\Terrset\Future_crosstab.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_persistence_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\idrtmp_lulc.avl
+OVERLAY  1*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_transition_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Bool_persistence_Sub-Model_URBAN.rst*F:\Future Landuse\Terrset\Future_Train_URBAN.rst
+MLP  1*1*F:\Future Landuse\Terrset\idrtmp_lulc_explan_vars.rgf*NONE*F:\Future Landuse\Terrset\Future_Train_URBAN.rst*1*500*500*Y*1*7*Y*0.001*0.01*0.5*1.0*0.01*10000*100*2*F:\Future Landuse\Terrset\Future*N*1*3*F:\Future Landuse\Terrset\2008-thematic_new.rst
+RECLASS  I*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rcl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_act1.rst*f:\future landuse\terrset\future_transition_potential_from_2_to_4.rst
+RECLASS  I*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rcl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_classmask.rst*F:\Future Landuse\Terrset\idrtmp_lulc_act2.rst*f:\future landuse\terrset\future_transition_potential_from_3_to_4.rst
+DISPLAY image file f:\future landuse\terrset\future_transition_potential_from_2_to_4.rst with symbol file Quant.  Autoscale, Title, Legend.
+DISPLAY image file f:\future landuse\terrset\future_transition_potential_from_3_to_4.rst with symbol file Quant.  Autoscale, Title, Legend.
+MARKOV  F:\Future Landuse\Terrset\2001-thematic_new.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\Future_2100_*1*0.0*7*92*lulc
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_soft_modeled.rst
+ChgAlloc  F:\Future Landuse\Terrset\2008-thematic_new.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_1.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1_soft.rst
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_2.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_1_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_3.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_2_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_4.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_3_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_5.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_4_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_6.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_5_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_7.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_6_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_8.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_7_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_9.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_8_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_10.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_9_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_11.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_10_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_12.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_11_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_13.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_12_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_14.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_13_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_15.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_14_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_16.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_15_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_17.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_16_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_18.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_17_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_19.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_18_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19_soft.rst with symbol file quant.  Autoscale, Title, Legend.
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*2
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_2_to_4.rst
+BREAKOUT  1*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*2*3
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\idrtmp_bool.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_REDD_landclass_bool.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_Future_transition_potential_from_3_to_4.rst
+ChgAlloc  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19.rst*4*F:\Future Landuse\Terrset\Future_2100_transition_areas.txt*F:\Future Landuse\Terrset\Future_transition_potential_stage_20.rgf*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3.rst*1*1
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3.rst with symbol file F:\Future Landuse\Terrset\2001-thematic.smp.  Title, Legend.
+OVERLAY  1*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst
+OVERLAY  3*F:\Future Landuse\Terrset\Future_transition_potential_from_2_to_4.rst*F:\Future Landuse\Terrset\Future_transition_potential_from_3_to_4.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst
+OVERLAY  2*F:\Future Landuse\Terrset\idrtmp_lulc_add_final.rst*F:\Future Landuse\Terrset\idrtmp_lulc_multiply_final.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_soft.rst
+OVERLAY  2*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3.rst*F:\Future Landuse\Terrset\2008-thematic_new.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst
+RECLASS  I*F:\Future Landuse\Terrset\idrtmp_lulc_current_change.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*2*1*1*99999*1*-9999*0*-9999*1
+ASSIGN  F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_to_soft.avl
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_soft_class_bool.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst
+OVERLAY  3*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_change_bool.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_stage_19_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst
+OVERLAY  7*F:\Future Landuse\Terrset\idrtmp_lulc_cummulative_soft_mask.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_soft.rst*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst
+CONVERT  1*F:\Future Landuse\Terrset\idrtmp_lulc_current_change_soft.rst*F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_soft.rst*2*2*2
+DISPLAY image file F:\Future Landuse\Terrset\landcov_predict_2100_2_matrix30_3_soft.rst with symbol file quant.  Autoscale, Title, Legend.

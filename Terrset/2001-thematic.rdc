@@ -1,0 +1,38 @@
+file format : IDRISI Raster A.1
+file title  : 
+data type   : byte
+file type   : binary
+columns     : 1717
+rows        : 951
+ref. system : utm-43n
+ref. units  : m
+unit dist.  : 1.0000000
+min. X      : 294676.5064347
+max. X      : 346186.5064347
+min. Y      : 2454061.0564304
+max. Y      : 2482591.0564304
+pos'n error : unknown
+resolution  : 30.0000000
+min. value  : 1
+max. value  : 4
+display min : 1
+display max : 4
+value units : unspecified
+value error : unknown
+flag value  : none
+flag def'n  : none
+legend cats : 0
+lineage     : 
+comment     : 
+comment     : Scale in X : 30
+comment     : Scale in Y : 30
+comment     : Tie point 1 C R P X Y Z : 0 0 0 294676.506434681 2482591.05643045 0
+comment     : Georeferencing uses Plane Coordinates
+comment     : Pixel reference point is lower-left corner
+comment     : Citation : IMAGINE GeoTIFF Support
+comment     : 2015 15.0.0.191
+comment     : e = UTM
+comment     : 
+comment     : = meters|
+comment     : Projected Coordinate System EPSG Code : 32643 : WGS84_UTM_zone_43N = Idrisi utm-43n.ref
+comment     : PCS Linear Units EPSG Code : 9001 : Meter = Idrisi 1.0 m

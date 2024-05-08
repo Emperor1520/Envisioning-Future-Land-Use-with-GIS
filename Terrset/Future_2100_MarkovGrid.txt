@@ -1,0 +1,5 @@
+4
+Water
+Forest
+Agriculture
+Urban

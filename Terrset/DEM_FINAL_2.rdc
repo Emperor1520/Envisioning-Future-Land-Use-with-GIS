@@ -1,0 +1,42 @@
+file format : IDRISI Raster A.1
+file title  : 
+data type   : integer
+file type   : binary
+columns     : 1717
+rows        : 951
+ref. system : utm-43n
+ref. units  : m
+unit dist.  : 1.0000000
+min. X      : 294676.5064347
+max. X      : 346186.5064347
+min. Y      : 2454061.0564304
+max. Y      : 2482591.0564304
+pos'n error : unknown
+resolution  : 30.0000000
+min. value  : 9
+max. value  : 191
+display min : 9
+display max : 191
+value units : unspecified
+value error : unknown
+flag value  : -2147483904
+flag def'n  : missing data
+legend cats : 0
+lineage     : 
+comment     : 
+comment     : Scale in X : 30
+comment     : Scale in Y : 30
+comment     : Tie point 1 C R P X Y Z : 0 0 0 294676.506434681 2482591.05643045 0
+comment     : Georeferencing uses Plane Coordinates
+comment     : Pixel reference point is lower-left corner
+comment     : Citation : PCS Name = WGS_1984_UTM_Zone_43N|
+comment     : Geographic Coord. System EPSG Code : 4326 : WGS_84 = Idrisi Latlong.ref
+comment     : GeogCitationGeoKey : PCS Name = WGS_1984_UTM_Zone_43N|GCS Name = GCS_WGS_1984|Datum = WGS_1984|Ellipsoi
+comment     : Datum EPSG Code : 6326 : WGS84
+comment     : Angular Units EPSG Code : 9102 : Degree = Idrisi 1.0 deg
+comment     : Semi-Major Axis : 6378137
+comment     : Inverse Flattening Ratio : 298.257223563
+comment     : Prime Meridian : 0
+comment     : Projected Coordinate System EPSG Code : 32643 : WGS84_UTM_zone_43N = Idrisi utm-43n.ref
+comment     : User Defined Projection
+comment     : PCS Linear Units EPSG Code : 9001 : Meter = Idrisi 1.0 m
