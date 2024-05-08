@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20180825</CreaDate><CreaTime>19383200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Spatial Analyst Tools.tbx\Reclassify" Date="20180825" Time="193832">Reclassify "FInal Landuse\2001_landuse1.tif" Value "1 1;2 2;3 3;4 3;5 4" "F:\Future Landuse\Landuses\2001_1.tif" NODATA</Process></lineage></DataProperties></Esri></metadata>
